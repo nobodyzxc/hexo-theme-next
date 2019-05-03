@@ -14,14 +14,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
-{% if theme.weichuncai %}
-<script>
-var imagewidth = "85";
-var imageheight = "152";
-createFace("/images/rakutori/face1.gif", "/images/rakutori/face2.gif", "/images/rakutori/face3.gif");
-</script>
-{% endif %}
-
   {% set container_class = "container " %}
   {% if theme.sidebar.position %}
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
@@ -97,5 +89,12 @@ createFace("/images/rakutori/face1.gif", "/images/rakutori/face2.gif", "/images/
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
   <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+{% if theme.weichuncai %}
+<script>
+var imagewidth = "85";
+var imageheight = "152";
+createFace("/images/neko/face1.gif", "/images/neko/face2.gif", "/images/neko/face3.gif");
+</script>
+{% endif %}
 </body>
 </html>

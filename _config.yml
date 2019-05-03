@@ -675,7 +675,7 @@ motion:
 fancybox: true
 
 # weichuncai
-weichuncai: true
+weichuncai: false
 
 # Progress bar in the top during page loading.
 pace: false
