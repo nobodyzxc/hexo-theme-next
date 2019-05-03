@@ -6,6 +6,10 @@
   }
 </script>
 
+{% if theme.weichuncai %}
+  {% set js_vendors.weichuncai  = 'weichuncai/weichuncai.js?v=1.0.1' %}
+{% endif %}
+
 {% set js_vendors = {} %}
 {% set js_vendors.jquery      = 'jquery/index.js?v=2.1.3' %}
 {% set js_vendors.fastclick   = 'fastclick/lib/fastclick.min.js?v=1.0.6' %}
