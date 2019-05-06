@@ -38,6 +38,11 @@
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
+ <div>
+     <font>總字數統計： </font>
+         <span class="post-count">{{ totalcount(site, '0,0') }}</span>
+     <font> 字</font>
+ </div>
 {% endif %}
 
 {% if theme.footer.custom_text %}
