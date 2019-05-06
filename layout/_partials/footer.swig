@@ -39,9 +39,9 @@
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
  <div>
-     <font>總字數統計： </font>
+     <font>足跡統計：共走了 </font>
          <span class="post-count">{{ totalcount(site, '0,0') }}</span>
-     <font> 字</font>
+     <font> 步</font>
  </div>
 {% endif %}
 
