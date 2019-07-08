@@ -17,7 +17,7 @@
     {% endif %}
     <span title="{{ __('post.totalcount') }}">{#
     #}{{ totalcount(site, '0,0.0a') }}{#
-  #}</span>
+  #} </span>
   {% endif %}
 </div>
 
@@ -38,11 +38,6 @@
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
- <div>
-     <font>足跡統計：共走了 </font>
-         <span class="post-count">{{ totalcount(site, '0,0') }}</span>
-     <font> 步</font>
- </div>
 {% endif %}
 
 {% if theme.footer.custom_text %}

@@ -9,6 +9,8 @@
       </div>
     {% endif %}
 
+    <div class="top-scroll-bar"></div>
+
     <div class="custom-logo-site-title">
       <a href="{{ config.root }}"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>

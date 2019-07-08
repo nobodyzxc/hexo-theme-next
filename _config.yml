@@ -54,13 +54,13 @@ footer:
   copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
@@ -194,7 +194,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -549,19 +549,19 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_header: "visitors:"
+  site_uv_footer: <i class="fa fa-user"></i>
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: "visit count:"
+  site_pv_footer: 🐾
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+  page_pv_header: <i class="fa fa-eye"></i>
+  page_pv_footer: times
 
 
 # Tencent analytics ID
@@ -678,24 +678,20 @@ fancybox: true
 weichuncai: false
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
-#pace-theme-big-counter
-#pace-theme-bounce
-#pace-theme-barber-shop
-#pace-theme-center-atom
-#pace-theme-center-circle
-#pace-theme-center-radar
-#pace-theme-center-simple
-#pace-theme-corner-indicator
-#pace-theme-fill-left
-#pace-theme-flash
-#pace-theme-loading-bar
-#pace-theme-mac-osx
-#pace-theme-minimal
-# For example
-# pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+#pace_theme: pace-theme-big-counter
+#pace_theme: pace-theme-bounce
+#pace_theme: pace-theme-barber-shop
+#pace_theme: pace-theme-center-atom
+#pace_theme: pace-theme-center-circle
+#pace_theme: pace-theme-center-radar
+#pace_theme: pace-theme-center-simple
+#pace_theme: pace-theme-corner-indicator # good
+#pace_theme: pace-theme-fill-left # good
+pace_theme: pace-theme-flash # good
+#pace_theme: pace-theme-mac-osx # fancy
+#pace_theme: pace-theme-minimal # simple
 
 # Canvas-nest
 canvas_nest: false
@@ -814,3 +810,7 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+# custom
+passage_end_tag:
+  enabled: true
