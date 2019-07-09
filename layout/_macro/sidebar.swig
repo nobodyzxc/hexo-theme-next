@@ -85,13 +85,17 @@
 
           </nav>
 
-          {% if theme.rss %}
-            <div class="feed-link motion-element">
-              <a href="{{ url_for(theme.rss) }}" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
+          {% if site.tags.length > 1 %}
+          <script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcloud.js') }}"></script>
+          <script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcanvas.js') }}"></script>
+          <div class="widget-wrap">
+              <h3 class="widget-title">Tag Cloud</h3>
+              <div id="myCanvasContainer" class="widget tagcloud">
+                  <canvas width="250" height="250" id="resCanvas" style="width=100%">
+                      {{ list_tags() }}
+                  </canvas>
+              </div>
+          </div>
           {% endif %}
 
           {% if theme.social %}
@@ -138,6 +142,16 @@
           {% endif %}
 
           {% include '../_custom/sidebar.swig' %}
+
+          {% if theme.rss %}
+            <div class="feed-link motion-element">
+              <a href="{{ url_for(theme.rss) }}" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          {% endif %}
+
         </div>
       </section>
 
