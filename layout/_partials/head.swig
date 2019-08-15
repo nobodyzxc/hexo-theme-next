@@ -3,9 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 
-{% if theme.weichuncai %}
-    <link href="{{ url_for(theme.css) }}/weichuncai.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+{% if theme.ukagaka %}
+    <script src="<%- config.root %>files/jquery-ui.js"></script>
+    <script src="<%- config.root %>files/jquery.morris.ukagaka.resource.js"></script>
+    <script type="text/javascript">
+      $('#live2d-widget').ukagaka();
+    </script>
 {% endif %}
+
 
 {% if theme.pace %}
   {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}
