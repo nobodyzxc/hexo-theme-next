@@ -45,3 +45,31 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
+
+{% if theme.ukagaka %}
+    <script type="text/javascript" src='https://code.jquery.com/jquery-1.10.2.js'></script>
+    <script defer type="text/javascript">
+      function load_script(url){
+        var ukagaka_script = document.createElement('script');
+        ukagaka_script.setAttribute('src', url);
+        document.head.appendChild(ukagaka_script);
+      }
+      function load_style(url){
+        var ukagaka_css = document.createElement('link');
+        ukagaka_css.setAttribute('rel', 'stylesheet');
+        ukagaka_css.setAttribute('type', type='text/css');
+        ukagaka_css.setAttribute('href', url);
+        document.head.appendChild(ukagaka_css);
+      }
+
+      document.onreadystatechange = function () {
+          if (document.readyState == "interactive") {
+              load_style('/files/ukagaka.css');
+              load_script('/files/jquery-ui.js');
+              load_script('/files/typed.js');
+              load_script('/files/ukagaka.js');
+              //load_script('/files/jquery.morris.ukagaka.resource.js');
+          }
+      }
+    </script>
+{% endif %}
