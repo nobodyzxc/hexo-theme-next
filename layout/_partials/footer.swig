@@ -48,6 +48,7 @@
 
 {% if theme.ukagaka %}
     <script type="text/javascript" src='https://code.jquery.com/jquery-1.10.2.js'></script>
+    <script type="text/javascript" src='/files/typed.js'></script>
     <script defer type="text/javascript">
       function load_script(url){
         var ukagaka_script = document.createElement('script');
@@ -66,7 +67,7 @@
           if (document.readyState == "interactive") {
               load_style('/files/ukagaka.css');
               load_script('/files/jquery-ui.js');
-              load_script('/files/typed.js');
+              //load_script('/files/typed.js');
               load_script('/files/ukagaka.js');
               //load_script('/files/jquery.morris.ukagaka.resource.js');
           }
