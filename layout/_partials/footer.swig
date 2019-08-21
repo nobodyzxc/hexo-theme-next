@@ -65,6 +65,7 @@
 
       document.onreadystatechange = function () {
           if (document.readyState == "interactive") {
+              load_script('/files/reconnecting-websocket.min.js');
               load_style('/files/ukagaka.css');
               load_script('/files/jquery-ui.js');
               //load_script('/files/typed.js');
